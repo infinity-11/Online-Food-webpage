@@ -1,0 +1,211 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#heading-main {
+    color: #f50a0a;
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+#heading-sub {
+    text-align: center;
+    font-size: 21px;
+    color: black;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+#main-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    height: 14vh;
+    width: 100vw;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+#main-nav img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 3px auto;
+}
+
+#nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+#nav-list li {
+    list-style: none;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+#nav-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 1px;
+    border-radius: 10px;
+}
+
+#nav-list li a:hover {
+    background-color: red;
+    border-radius: 10px;
+}
+
+#hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 63vh;
+}
+
+#hero-section::before {
+    content: '';
+    background: url("https://media.geeksforgeeks.org/wp-content/uploads/20240711124309/8513909_3941598-(2).jpg") no-repeat center/cover;
+    width: 100vw;
+    height: 59vh;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0.89;
+    z-index: -1;
+    border: 2px solid black;
+    border-bottom-left-radius: 100px;
+}
+
+.welcome-message {
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.action-btn {
+    margin-top: 15px;
+    background-color: yellow;
+    border: 3px solid white;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: red;
+}
+
+.promo-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.promo-item {
+    width: 24vw;
+    height: 21vh;
+    margin-top: 51px;
+    margin-bottom: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    border-radius: 40px;
+    box-shadow: 2px 7px 16px 19px rgba(0,0,0,0.15);
+}
+
+/* Background images for promo items */
+.promo-item:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 24vw; height: 21vh;
+    border-radius: 40px;
+    background: url('https://media.geeksforgeeks.org/wp-content/uploads/20240711123257/jpeg-optimizer_2151336570.jpg') no-repeat center/cover;
+    z-index: -1;
+}
+.promo-item:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 24vw; height: 21vh;
+    border-radius: 40px;
+    background: url('https://media.geeksforgeeks.org/wp-content/uploads/20240711123256/jpeg-optimizer_6656747_21351.jpg') no-repeat center/cover;
+    z-index: -1;
+}
+
+/* Featured Products Section */
+#featured-heading {
+    text-align: center;
+    color: red;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+#product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 41px;
+}
+
+.product-card {
+    width: 29vw;
+    height: 360px;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-card:nth-child(1) {
+    background-image: url('https://media.geeksforgeeks.org/wp-content/uploads/20240711123258/jpeg-optimizer_various-meals-western-food-platter-dark-background.jpg');
+}
+.product-card:nth-child(2) {
+    background-image: url('https://media.geeksforgeeks.org/wp-content/uploads/20240711123257/jpeg-optimizer_2151182491.jpg');
+}
+.product-card:nth-child(3) {
+    background-image: url('https://media.geeksforgeeks.org/wp-content/uploads/20240711123255/jpeg-optimizer_4744.jpg');
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 20px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+#contact-section {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 92%;
+    padding: 0.5rem;
+    margin-top: 5px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+#membership-info {
+    margin: 15px 0;
+    font-family: 'Ubuntu Mono', monospace;
+    color: black;
+}
